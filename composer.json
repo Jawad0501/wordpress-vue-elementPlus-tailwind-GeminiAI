@@ -1,0 +1,50 @@
+{
+    "name": "fluent-gemini/fluent-gemini",
+    "description": "Gemini AI plugin for wordpress",
+    "keywords": [
+        "WordPress",
+        "plugin",
+        "Fluent Gemini"
+    ],
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nowshad Jawad",
+            "email": "anmjawad007@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/wpfluent/framework"
+        }
+    ],
+    "require": {
+        "wpfluent/framework": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FluentGemini\\App\\": "app/",
+            "FluentGemini\\Includes\\": "includes/",
+            "FluentGemini\\Framework\\": "vendor/wpfluent/framework/src/WPFluent"
+        },
+        "classmap": [
+            "database/"
+        ],
+        "files": [
+            "boot/globals.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "fluent-gemini": {
+            "namespace": {
+                "current": "FluentGemini"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
